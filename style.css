@@ -26,19 +26,19 @@
 .main-box{
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
-    background-color: coral;
+    background-color: rgb(20, 25, 35);
     overflow-y: scroll;
 }
 
 .footer{
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: darkcyan;
     z-index: 1;
 }
 
 header{
-    width: 100%;
+    width: calc(100% - 200px);
     height: 100px;
     background-color: darkred;
     z-index: 3;
@@ -182,6 +182,97 @@ header{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.header-music li{
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 10px;
+    opacity: 60%;
+}
+
+.header-music ul{
+    margin-top: 25px;
+    width: calc(100vw - 200px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-box h1{
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.recently-song{
+    margin-left: 40px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.song{
+    height: 190px;
+    width: 190px;
+}
+
+.song-info{
+    width: 190px;
+    margin-left: 2%;
+}
+
+.name{
+    color: white;
+    padding-top: 15px;
+}
+
+.subtitle{
+    color: white;
+    padding-top: 15px;
+    opacity: 50%;
+    font-size: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggerimenti{
+    margin-left: 50px;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.popolari{
+    margin-bottom: 30px;
+}
+
+.right-bar{
+    height: calc(100vw - 200px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
