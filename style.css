@@ -24,24 +24,42 @@
 
 
 .main-box{
-    width: calc(100% - 200px);
+    width: 100%;
     height: calc(100vh - 100px);
     background-color: rgb(20, 25, 35);
     overflow-y: scroll;
+    z-index: 1;
 }
 
 .footer{
     width: 100%;
     height: 100px;
-    background-color: darkcyan;
+    background-color: grey;
     z-index: 1;
+    position: fixed;
 }
 
 header{
     width: calc(100% - 200px);
     height: 100px;
-    background-color: darkred;
+    background-color: black;
     z-index: 3;
+    opacity: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-bar{
+    width: calc(100% - 200px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-box{
+    margin-top: 130px;
 }
 
 .logo{
@@ -211,15 +229,15 @@ header{
     margin-left: 40px;
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .song{
-    height: 190px;
-    width: 190px;
+    height: 11vw;
 }
 
 .song-info{
-    width: 190px;
+    width: 11vw;
     margin-left: 2%;
 }
 
@@ -253,26 +271,190 @@ header{
     margin-bottom: 30px;
 }
 
-.right-bar{
-    height: calc(100vw - 200px);
+.upgrade{
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    color: white;
+    width: 230px;
+    margin-right: 40px;
 }
 
+.player{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(53, 53, 53);
+}
 
+.player-sx, .player-dx{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
 
+.player-cn{
+    width: calc(100vw - 400px);
+    height: 100px;
+    background-color: rgb(53, 53, 53);
+}
 
+.mini-song{
+    height: 60%;
+}
 
+.mini-name{
+    color: white;
+    font-size: 14px;
+}
 
+.mini-info{
+    margin-left: 3px;
+}
 
+.mini-subtitle{
+    color: white;
+    font-size: 12px;
+    opacity: 60%;
+}
 
+.heart:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1;
+    content: "\f004";
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    font-size: 15px;
+    float: left;
+    margin-left: 3px;
+    opacity: 60%;
+}
 
+.folder:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1;
+    content: "\f07b";
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    float: left;
+    opacity: 60%;
+}
 
+.list:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f0ca";
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
 
+.monitor:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f108";
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-left: 8px;
+}
 
+.audio:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f028";
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-left: 8px;
+}
 
+.aplayer-dx input{
+    width: 100px;
+    background-color: grey;
+}
 
+.random:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f074";
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 8px;
+}
 
+.pre:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f048";
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 8px;
+    margin: 8px;
+}
 
+.play:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1;
+    content: "\f144";
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
 
+.after:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f051";
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.repeat:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f01e";
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.player-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-cn input{
+    width: 60%;
+    margin-top: 10px;
+}
+
+.player-cn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-dw{
+    width: calc(100vw - 400px);
+    display: flex;
+    justify-content: center;
+}
+
+.player-dw p{
+    color: white;
+    margin-top: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
 
 
 
@@ -318,5 +500,13 @@ header{
        width: 29px;
        margin-left: 10px;
        background-repeat: no-repeat;
+   }
+
+   .player-dx, .player-cn, .player-sx{
+       width: calc(100vw / 3);
+   }
+
+   .player-dw{
+       width: calc(100vw / 3);
    }
   }

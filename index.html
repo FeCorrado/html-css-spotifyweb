@@ -64,10 +64,13 @@
         </div>
         <!--Fine sidebar-->
         <div class="right-bar">
-            <!--Header-->
-            <header></header>
-            <!--Fine Header-->
+           
             <div class="main-box">
+                 <!--Header-->
+            <header>
+                <div class="upgrade">EFFETTUA L'UPGRADE</div>
+            </header>
+            <!--Fine Header-->
                 <!--Music Box-->
                 <div class="music-box">
                     <!--Header-->
@@ -134,17 +137,19 @@
                         <!--Creato per-->
                         <h1 class="recently"><b>Creato per John Doe</b></h1>
                         <p class="subtitle suggerimenti">Più ascolti, più accurati saranno i suggerimenti</p>
-                        <div class="recently-song">
-                            <div class="song-info">
-                                <img class="song" src="img/radar.jpeg" alt="radar">
-                                <div class="info">
-                                    <p class="name"><b>Release Radar</b></p>
+                        <div class="creato">
+                            <div class="recently-song">
+                                <div class="song-info">
+                                    <img class="song" src="img/radar.jpeg" alt="radar">
+                                    <div class="info">
+                                        <p class="name"><b>Release Radar</b></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="song-info">
-                                <img class="song" src="img/mixdaily.jpeg" alt="mix">
-                                <div class="info">
-                                    <p class="name"><b>Daily Mix 1</b></p>
+                                <div class="song-info  ">
+                                    <img class="song" src="img/mixdaily.jpeg" alt="mix">
+                                    <div class="info">
+                                        <p class="name"><b>Daily Mix 1</b></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -176,6 +181,44 @@
         
         
     </div>
-    <footer class="footer"></footer>
+    <!--Player-->
+    <footer class="player">
+        <!--Player sx-->
+        <div class="player-sx">
+            <img class="mini-song" src="img/sinister.jpeg" alt="sinister">
+            <div class="mini-info">
+                <p class="mini-name"><b>Sinister</b></p>
+                <p class="mini-subtitle">Brano Nome</p>
+            </div>
+            <div class="heart"></div>
+            <div class="folder"></div>
+        </div>
+        <!--Fine Player sx-->
+        <div class="player-cn">
+            <div class="player-box">
+                <div class="player-up">
+                    <div class="random"></div>
+                    <div class="pre"></div>
+                    <div class="play"></div>
+                    <div class="after"></div>
+                    <div class="repeat"></div>
+                </div>
+                <div class="player-dw">
+                    <p><b>0:25</b></p>
+                    <input id="audio-bar" type="range" min="0" max="100" step="1"></input>
+                    <p><b>4:35</b></p>
+                </div>
+            </div>
+        </div>
+        <!--Player dx-->
+        <div class="player-dx">
+            <div class="list"></div>
+            <div class="monitor"></div>
+            <div class="audio"></div>
+            <input id="music-bar" type="range" min="0" max="100" step="1"></input>
+        </div>
+        <!--Fine Player dx-->
+    </footer>
+    <!--Fine Player-->
 </body>
 </html>
