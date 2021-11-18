@@ -8,7 +8,7 @@
 .macro-box-up{
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: chartreuse;
+    background-color: black;
     display: flex;
 }
 
@@ -456,6 +456,9 @@ header{
     margin-right: 3px;
 }
 
+.loghi{
+    display: flex;
+}
 
 
 
@@ -463,6 +466,7 @@ header{
 
 
 
+/*Smart phone*/
 @media screen and (max-width: 575px) {
 
     .sidebar{
@@ -470,9 +474,9 @@ header{
     }
   
     .main-box{
-        width: calc(100% - 50px);
+        width: calc(100vw - 50px);
         height: calc(100vh - 100px);
-        background-color: coral;
+        background-color: rgb(20, 25, 35);
         overflow-y: scroll;
     }
 
@@ -509,4 +513,82 @@ header{
    .player-dw{
        width: calc(100vw / 3);
    }
+
+   header{
+       width: calc(100vw - 50px);
+   }
+
+   .header-music ul{
+       width: calc(100vw - 50px);
+   }
+
+   .header-music li{
+    font-size: 12px;
+    margin-top: 45px;
+    }
+
+    .music-box {
+    margin-top: 80px;
+    }
+
+    .music-box h1 {
+        margin-left: 20px;
+    }
+
+    .song{
+        width: 30vw;
+        height: auto;
+    }
+
+    .song-info{
+        width: 30vw;
+        margin-left: 10%;
+        margin-top: 15px;
+    }
+
+    .recently-song{
+        margin-left: 0px;
+    }
+
+    .mini-song{
+        margin-left: 3px;
+    }
+
+    .loghi{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .mini-subtitle{
+        font-size: 10px;
+    }
+    
+  }
+
+
+  /*Tablet*/
+  @media screen and (min-width: 576px) and (max-width: 1199px) {
+    
+    .song{
+        width: 17vw;
+        height: auto;
+    }
+
+    .song-info{
+        width: 14vw;
+        margin-right: 3%;
+        margin-top: 10px;
+    }
+
+    .recently-song{
+        margin-left: 0px;
+    }
+
+    .folder{
+        margin-left: 2px;
+    }
+
+
+
+
   }
