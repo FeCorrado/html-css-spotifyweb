@@ -98,6 +98,7 @@ header{
     width: 80%;
     margin: auto;
     margin-top: 15px;
+    min-height: 500px;
 }
 
 .playlist p{
@@ -218,7 +219,7 @@ header{
 
 .header-music ul{
     margin-top: 25px;
-    width: calc(100vw - 200px);
+    width: calc(100% - 200px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -608,7 +609,7 @@ header{
     }
 
 
-
+/*
 
   }
 
@@ -625,3 +626,4 @@ header{
 
 
   }
+  */
