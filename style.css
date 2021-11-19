@@ -248,11 +248,18 @@ header{
 .play-h{
     width: 11vw;
     position: absolute;
+    opacity: 0%;
+    z-index: 2000;
+}
+
+.play-h:hover{
     opacity: 40%;
 }
 
 .song-hover{
     position: relative;
+    width: 11vw;
+    height: 11vw;
 }
 
 .song-info{
@@ -570,7 +577,21 @@ header{
 
     .song{
         width: 30vw;
-        height: auto;
+        height: 30vw;
+        position: absolute;
+    }
+    
+    .play-h{
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        opacity: 40%;
+    }
+    
+    .song-hover{
+        position: relative;
+        width: 30vw;
+        height: 30vw;
     }
 
     .song-info{
@@ -604,11 +625,25 @@ header{
     
     .song{
         width: 17vw;
-        height: auto;
+        height: 17vw;
+        position: absolute;
+    }
+    
+    .play-h{
+        width: 17vw;
+        height: 17vw;
+        position: absolute;
+        opacity: 40%;
+    }
+    
+    .song-hover{
+        position: relative;
+        width: 17vw;
+        height: 17vw;
     }
 
     .song-info{
-        width: 14vw;
+        width: 17vw;
         margin-right: 3%;
         margin-top: 10px;
     }
