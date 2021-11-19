@@ -209,6 +209,12 @@ header{
     margin-bottom: 10px;
 }
 
+.header-music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-music li{
     color: white;
     list-style-type: none;
@@ -220,7 +226,7 @@ header{
 
 .header-music ul{
     margin-top: 25px;
-    width: calc(100% - 200px);
+    width: calc(100% - 170px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -250,6 +256,19 @@ header{
     position: absolute;
     opacity: 0%;
     z-index: 2000;
+}
+
+.verde-macro{
+    margin-top: -6px;                   /* Porkaround ALLERT! */        
+}
+
+.verde{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.verde hr{
+    border-color: chartreuse;
 }
 
 .play-h:hover{
@@ -617,6 +636,14 @@ header{
         font-size: 10px;
     }
     
+    .verde-macro{
+        margin-top: 0px;                     
+    }
+    
+    .verde{
+        width: 30px;
+        margin-left: 26px;
+    }
   }
 
 
@@ -656,22 +683,4 @@ header{
         margin-left: 2px;
     }
 
-
-/*
-
-  }
-
-  @media screen and (max-height: 644px)  {
-    
-    .side-footer{
-        display: none;
-    }
-
-    .nome-playlist{
-        overflow-y: auto;
-    }
-
-
-
-  }
-  */
+}
