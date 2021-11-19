@@ -242,6 +242,13 @@ header{
 
 .song{
     height: 11vw;
+    position: absolute;
+}
+
+.play-h{
+    width: 11vw;
+    position: relative;
+    opacity: 40%;
 }
 
 .song-info{
