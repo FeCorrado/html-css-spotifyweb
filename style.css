@@ -604,7 +604,6 @@ header{
         width: 30vw;
         height: 30vw;
         position: absolute;
-        opacity: 40%;
     }
     
     .song-hover{
@@ -660,7 +659,6 @@ header{
         width: 17vw;
         height: 17vw;
         position: absolute;
-        opacity: 40%;
     }
     
     .song-hover{
