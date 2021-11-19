@@ -242,7 +242,7 @@ header{
 
 .song{
     height: 11vw;
-    position: relative;
+    position: absolute;
 }
 
 .play-h{
