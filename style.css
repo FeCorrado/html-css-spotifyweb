@@ -247,8 +247,12 @@ header{
 
 .play-h{
     width: 11vw;
-    position: relative;
+    position: absolute;
     opacity: 40%;
+}
+
+.song-hover{
+    position: relative;
 }
 
 .song-info{
